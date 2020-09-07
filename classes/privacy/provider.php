@@ -1,3 +1,7 @@
+<?php
+// …
+ 
+
 namespace mod_alplinks\privacy;
  
 class provider implements 
