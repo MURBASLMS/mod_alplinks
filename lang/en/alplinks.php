@@ -32,6 +32,7 @@ $string['modulename'] = 'alplinks';
 $string['modulenameplural'] = 'alplinkss';
 $string['modulename_help'] = 'Echo360 Link allows you to automatically link from the LMS to a main home page for the unit offering (section) in Echo360, or create multiple links to specific classrooms/recordings/videos in an Echo360 section.';
 $string['alplinks:addinstance'] = 'Add a new alplinks';
+$string['privacy:metadata'] = 'the alplink mod does not store any individual user data.';
 $string['alplinks:submit'] = 'Submit alplinks';
 $string['alplinks:view'] = 'View alplinks';
 $string['alplinksfieldset'] = 'Custom example fieldset';
