@@ -28,6 +28,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['launchpromptmobile'] = 'Click here to access Echo360';
 $string['modulename'] = 'alplinks';
 $string['modulenameplural'] = 'alplinkss';
 $string['modulename_help'] = 'Echo360 Link allows you to automatically link from the LMS to a main home page for the unit offering (section) in Echo360, or create multiple links to specific classrooms/recordings/videos in an Echo360 section.';

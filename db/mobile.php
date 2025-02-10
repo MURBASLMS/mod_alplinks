@@ -15,22 +15,31 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Defines the version and other meta-info about the plugin
+ * Mobile app areas for alplinks
  *
- * Setting the $plugin->version to 0 prevents the plugin from being installed.
- * See https://docs.moodle.org/dev/version.php for more info.
+ * Documentation: {@link https://moodledev.io/general/app/development/plugins-development-guide}
  *
  * @package    mod_alplinks
- * @copyright  2017 Tristan Mackay t.mackay@murdoch.edu.au
+ * @copyright  2025 Murdoch University
+ * @author     Frédéric Massart <fred@branchup.tech>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'mod_alplinks';
-$plugin->version = 201711240001;
-$plugin->release = 'v1.0';
-$plugin->requires = 2024042200; // Moodle 4.4.
-$plugin->maturity = MATURITY_STABLE;
-$plugin->cron = 0;
-$plugin->dependencies = array();
+$addons = [
+    'mod_alplinks' => [
+        'handlers' => [
+            'view' => [
+                'delegate' => 'CoreCourseModuleDelegate',
+                'method' => 'view_page',
+                'displaydata' => [
+                    'icon' => (new moodle_url('/mod/alplinks/pix/icon.svg'))->out(false),
+                ],
+            ],
+        ],
+        'lang' => [
+            ['pluginname', 'mod_alplinks'],
+        ],
+    ],
+  ];
